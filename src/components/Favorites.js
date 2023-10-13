@@ -6,7 +6,7 @@ import ExerciseCard from './ExerciseCard';
 
 
 const Favorites = ({ favoriteExercises, setFavoriteExercises, bodyPart }) => {
-
+	
 	useEffect(() => {
 		const fetchExercisesData = async () => {
 			let exercisesData = [];
@@ -56,7 +56,7 @@ const Favorites = ({ favoriteExercises, setFavoriteExercises, bodyPart }) => {
 			} 
 		};
 		fetchExercisesData(); 
-	}, [bodyPart]);
+	}, [bodyPart, setFavoriteExercises]);
 
 	//Chest[6, 27, 63, 119, 115, 40]
 	//Back[57, 68, 47, 54, 73, 149, 148(Shrugs)]
