@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
 
-import Logo from '../assets/images/Logo.png';
+import Logo from '../assets/images/dumbbell.png';
 
 const Navbar = () => (
   <Stack direction="row" justifyContent="space-around" sx={{ gap: { sm: '123px', xs: '40px' }, mt: { sm: '32px', xs: '20px' }, justifyContent: 'none' }} px="20px">
@@ -15,9 +15,11 @@ const Navbar = () => (
       fontFamily="Alegreya"
       fontSize="24px"
       alignItems="flex-end"
+      paddingBottom="10px"
     >
-      <Link to="/" style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #FF2625' }}>Home</Link>
-      <a href="#exercises" style={{ textDecoration: 'none', color: '#3A1212' }}>Exercises</a>
+      <Link to="/" style={{ textDecoration: 'none', color: '#fff', borderBottom: '3px solid #FF2625' }}>Home</Link>
+      <a href="#exercises" style={{ textDecoration: 'none', color: '#fff' }}>Exercises</a>
+      <a href="#contact" style={{ textDecoration: 'none', color: '#fff' }}>Contact Me</a>
     </Stack>
   </Stack>
 );

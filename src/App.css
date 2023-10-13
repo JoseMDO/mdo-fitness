@@ -1,7 +1,10 @@
+
+
 body {
   font-family: 'Josefin Sans';
-  background-color: #FFFAFB;
+  background-color: #1c1c1c;
 }
+
 
 * {
   padding: 0px;
@@ -11,7 +14,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
 }
 
 .right-arrow,
@@ -60,13 +63,17 @@ body {
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
+  border-bottom-left-radius: 250px;
+  box-shadow: 15px 15px 30px 15px;
 }
 
+
+
+
 .exercise-card {
-  width: 400px;
+  width: 400px; 
   height: 445px;
-  background: #fff;
+  background: #777777;
   border-top: 4px solid #FF2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
@@ -141,4 +148,67 @@ body {
   .exercise-card {
     width: 280px;
   }
+}
+
+.MuiPaginationItem-sizeLarge {
+  color: #fff !important;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-heading {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact-form {
+  font-size: 1.6rem;
+  font-weight: 300;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-button {
+  height: 60px;
+  width: 220px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 6px 8px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  color: #fff;
+  background: #ff2625;
+}
+
+.contact-inputs {
+  width: 600px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+textarea {
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  border-radius: 15px;
 }

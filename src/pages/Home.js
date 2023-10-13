@@ -5,6 +5,7 @@ import Exercises from '../components/Exercises';
 import SearchExercises from '../components/SearchExercises';
 import HeroBanner from '../components/HeroBanner';
 import Favorites from '../components/Favorites';
+import ContactUs from '../components/ContactUs';
 
 const Home = () => {
   const [favoriteExercises, setFavoriteExercises] = useState([]);
@@ -17,6 +18,7 @@ const Home = () => {
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
       <Favorites setFavoriteExercises={setFavoriteExercises} favoriteExercises={favoriteExercises} bodyPart={bodyPart}/>
+      <ContactUs />
     </Box>
   );
 };

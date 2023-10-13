@@ -73,9 +73,9 @@ const Favorites = ({ favoriteExercises, setFavoriteExercises, bodyPart }) => {
   return (
 		<Box>
 			{(bodyPart === 'all') 
-				? <Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Please Select a Body Part to Show My Personal Favorites</Typography>
+				? <Typography variant="h4" fontWeight="bold" color="#fff" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Please Select a Body Part to Show My Personal Favorites</Typography>
 				: <Box>
-				 		<Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Personal Favorites for {bodyPart.charAt(0).toUpperCase() + bodyPart.slice(1)}</Typography>
+				 		<Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px" color="#fff">Personal Favorites for {bodyPart.charAt(0).toUpperCase() + bodyPart.slice(1)}</Typography>
 						<Stack direction="row" sx={{ gap: { lg: '107px', xs: '50px' } }} flexWrap="wrap" justifyContent="center">
         			{favoriteExercises.map((exercise, idx) => (
           			<ExerciseCard key={idx} exercise={exercise} />
